@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="F4HB6xTWBtHB_Kmk4LTP">
+    <mxGraphModel dx="788" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-2" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;Ejercicio 06: Videoclub Glob-Gusters&lt;br&gt;La cadena de Video-Clubs Glob-Gusters ha decidido, que, para mejorar su servicio, emplear una base de datos para almacenar la información referente a las películas que ofrece en alquiler.&lt;br&gt;Esta información es la siguiente:&lt;br&gt;• Una película se caracteriza por su título, nacionalidad, productora y fecha.&lt;font style=&quot;color: rgb(204, 0, 0);&quot;&gt; Puede haber varias películas &lt;br&gt;con el mismo título, pero rodadas en fechas distintas.&lt;/font&gt;&lt;br&gt;• En una película pueden participar varios actores (nombre, nacionalidad, sexo) algunos de ellos como &lt;br&gt;actores principales.&lt;br&gt;• Una película está dirigida por un director (nombre, nacionalidad).&lt;br&gt;• De cada película se dispone de uno o varios ejemplares diferenciados por un número de ejemplar y &lt;br&gt;caracterizados por su estado de conservación.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Un ejemplar se puede encontrar alquilado a algún socio (DNI, nombre, dirección, teléfono). Se desea &lt;br&gt;almacenar la fecha de comienzo del alquiler y la de devolución.&lt;br&gt;• Un socio tiene que ser avalado por otro socio que responda de él en caso de tener problemas en el &lt;br&gt;alquiler.&lt;br&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-3" value="pelicula" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="320" y="310" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-5" value="director" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="310" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-6" value="actor" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="310" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-7" value="ejemplar" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="310" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-8" value="titulo&lt;br&gt;nacionalidad&lt;div&gt;productora&lt;/div&gt;&lt;div&gt;fecha&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="350" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-9" value="nombre&lt;div&gt;nacionalidad&lt;/div&gt;&lt;div&gt;sexo&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="360" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-10" value="n ejemplar&lt;div&gt;estado de conservacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-11" value="socio" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="540" y="310" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-12" value="DNI&lt;div&gt;nombre&lt;/div&gt;&lt;div&gt;direccion&lt;/div&gt;&lt;div&gt;telefono&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-13" value="fecha comienzo y devolucion" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uIe4lWe4zKRvfWXEUjpG-12" target="uIe4lWe4zKRvfWXEUjpG-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-15" value="socio debe ser avalado" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="315" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-16" value="nombre&lt;div&gt;nacionalidad&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uIe4lWe4zKRvfWXEUjpG-17" value="rol" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
