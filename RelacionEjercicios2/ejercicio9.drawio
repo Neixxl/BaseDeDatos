@@ -1,0 +1,133 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="DhrToO6lGbXAry7bJYPW">
+    <mxGraphModel dx="788" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JacUtOUT818TILroorEM-1" value="&lt;font style=&quot;font-size: 10px; line-height: 100%;&quot;&gt;Se desea diseñar una BD de una entidad bancaria que contenga información sobre los clientes, las cuentas, las sucursales y las transacciones producidas.&lt;br&gt;Construir el Modelo E/R teniendo en cuenta las siguientes restricciones:&lt;br&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 204, 0));&quot;&gt;• Una transacción viene determinada por un número de transacción (único para cada cuenta), la fecha y la cantidad.&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;• Un cliente puede tener muchas cuentas.&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;• Una cuenta puede ser de muchos clientes.&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;• Una cuenta sólo puede estar en una sucursal&lt;/font&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="390" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-2" value="cliente" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="300" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-3" value="cuenta" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="300" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-4" value="pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="260" y="300" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-4" parent="1" target="JacUtOUT818TILroorEM-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="300" as="sourcePoint" />
+            <mxPoint x="240" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-6" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-5">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-4" parent="1" target="JacUtOUT818TILroorEM-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-8" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-7">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-15" value="pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="210" y="210" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-15" parent="1" target="JacUtOUT818TILroorEM-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="177" y="190" as="sourcePoint" />
+            <mxPoint x="130" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-17" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-16">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-18" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-15" parent="1" target="JacUtOUT818TILroorEM-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="177" y="160" as="sourcePoint" />
+            <mxPoint x="360" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-19" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-18">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-20" value="sucursal" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="210" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-36" value="transaccion" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;shape=ext;margin=3;double=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="390" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-43" value="hace" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="210" y="390" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-44" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-43" parent="1" target="JacUtOUT818TILroorEM-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="187" y="400" as="sourcePoint" />
+            <mxPoint x="140" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-45" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-44">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="35" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-46" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="JacUtOUT818TILroorEM-43" parent="1" target="JacUtOUT818TILroorEM-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="187" y="400" as="sourcePoint" />
+            <mxPoint x="360" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-47" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="JacUtOUT818TILroorEM-46">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-48" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="JacUtOUT818TILroorEM-49" parent="1" source="JacUtOUT818TILroorEM-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="375" as="sourcePoint" />
+            <mxPoint x="560" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-49" value="&lt;u&gt;nTransaccion&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="395" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-50" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" target="JacUtOUT818TILroorEM-51" parent="1" source="JacUtOUT818TILroorEM-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="375" as="sourcePoint" />
+            <mxPoint x="530" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-51" value="fecha" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="45" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-52" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" target="JacUtOUT818TILroorEM-53" parent="1" source="JacUtOUT818TILroorEM-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="445" as="sourcePoint" />
+            <mxPoint x="530" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JacUtOUT818TILroorEM-53" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="490" y="430" width="65" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
