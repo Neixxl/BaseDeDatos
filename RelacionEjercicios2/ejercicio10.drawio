@@ -4,8 +4,184 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="RVssypuYPgg746el9prQ-1" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Tenemos que diseñar una base de datos sobre proveedores y disponemos de la siguiente información:&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;• De cada proveedor conocemos su nombre, dirección, ciudad, provincia y un código de proveedor que&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;será único para cada uno de ellos.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;• Nos interesa llevar un control de las piezas que nos suministra cada proveedor. Es importante conocer&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;la cantidad de las diferentes piezas que nos suministra y en qué fecha lo hace. Tenga en cuenta que un&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;mismo proveedor nos puede suministrar una pieza con el mismo código en diferentes fechas. El diseño&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;de la base de datos debe permitir almacenar un histórico con todas las fechas y las cantidades que nos&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;ha proporcionado un proveedor.&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;• Una misma pieza puede ser suministrada por diferentes proveedores.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;• De cada pieza conocemos un código que será único, nombre, color, precio y categoría.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;• Pueden existir varias categorías y para cada categoría hay un nombre y un código de categoría único.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;• Una pieza sólo puede pertenecer a una categoría&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RVssypuYPgg746el9prQ-1" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Tenemos que diseñar una base de datos sobre proveedores y disponemos de la siguiente información:&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;• De cada proveedor conocemos su nombre, dirección, ciudad, provincia y un código de proveedor que&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;será único para cada uno de ellos.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;• Nos interesa llevar un control de las piezas que nos suministra cada proveedor. Es importante conocer&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;la cantidad de las diferentes piezas que nos suministra y en qué fecha lo hace.&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Tenga en cuenta que un&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;mismo proveedor nos puede suministrar una pieza con el mismo código en diferentes fechas&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;. &lt;/span&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;El diseño&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;de la base de datos debe permitir almacenar un histórico con todas las fechas y las cantidades que nos&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;ha proporcionado un proveedor.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;• &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 204, 0));&quot;&gt;Una misma pieza puede ser suministrada por diferentes proveedores.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;• De cada pieza conocemos un código que será único, nombre, color, precio y categoría.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;• Pueden existir varias categorías y para cada categoría hay un nombre y un código de categoría único.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;• Una pieza sólo puede pertenecer a una categoría&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="10" width="640" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-1" value="proveedor" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="127.5" y="265" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-2" value="pieza" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="410.35999999999996" y="270" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-4" parent="1" source="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="142.5" y="200" as="sourcePoint" />
+            <mxPoint x="202.5" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-4" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="152.5" y="210" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-6" parent="1" source="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="247.5" y="225" as="sourcePoint" />
+            <mxPoint x="307.5" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-6" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="217.5" y="210" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-7" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-8" parent="1" source="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="277.5" y="280" as="sourcePoint" />
+            <mxPoint x="337.5" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-8" value="direccion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="77.5" y="210" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-11" parent="1" source="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287.5" y="285" as="sourcePoint" />
+            <mxPoint x="347.5" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-11" value="ciudad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="37.5" y="245" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-13" parent="1" source="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="127.5" y="275" as="sourcePoint" />
+            <mxPoint x="87.5" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-13" value="provinica" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="285" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-14" value="suministra" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="267.5" y="265" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="e48O_ROwL1UHitbBsOAP-14" parent="1" target="e48O_ROwL1UHitbBsOAP-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="307" y="250" as="sourcePoint" />
+            <mxPoint x="260" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-16" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="e48O_ROwL1UHitbBsOAP-15">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-17" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="e48O_ROwL1UHitbBsOAP-14" parent="1" target="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="307" y="250" as="sourcePoint" />
+            <mxPoint x="400" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-18" value="(1,M&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="e48O_ROwL1UHitbBsOAP-17">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-19" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-20" parent="1" source="e48O_ROwL1UHitbBsOAP-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="245" as="sourcePoint" />
+            <mxPoint x="290" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-20" value="fechaPedido" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="341" y="190" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-21" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-22" parent="1" source="e48O_ROwL1UHitbBsOAP-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="245" as="sourcePoint" />
+            <mxPoint x="228" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-22" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="284" y="210" width="57" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-23" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-24" parent="1" source="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="398.35999999999996" y="200" as="sourcePoint" />
+            <mxPoint x="458.35999999999996" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-24" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="415.35999999999996" y="220" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-35" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-36" parent="1" source="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430.2" y="180" as="sourcePoint" />
+            <mxPoint x="490.2" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-36" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470.35999999999996" y="220" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-37" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-38" parent="1" source="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.2" y="290" as="sourcePoint" />
+            <mxPoint x="560.2" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-38" value="color" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="490.2" y="260" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-39" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-40" parent="1" source="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="473.2" y="335" as="sourcePoint" />
+            <mxPoint x="533.2" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-40" value="precio" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480.2" y="305" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-43" value="categoria" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="345" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-44" value="pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="290" y="345" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-45" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="e48O_ROwL1UHitbBsOAP-44" parent="1" target="e48O_ROwL1UHitbBsOAP-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="335" as="sourcePoint" />
+            <mxPoint x="214" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-46" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="e48O_ROwL1UHitbBsOAP-45">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-47" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="e48O_ROwL1UHitbBsOAP-44" parent="1" target="e48O_ROwL1UHitbBsOAP-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="261" y="335" as="sourcePoint" />
+            <mxPoint x="434" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-48" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="e48O_ROwL1UHitbBsOAP-47">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="20" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-49" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-50" parent="1" source="e48O_ROwL1UHitbBsOAP-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="430" as="sourcePoint" />
+            <mxPoint x="175" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-50" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="415" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-51" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" target="e48O_ROwL1UHitbBsOAP-52" parent="1" source="e48O_ROwL1UHitbBsOAP-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="410" as="sourcePoint" />
+            <mxPoint x="280" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e48O_ROwL1UHitbBsOAP-52" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="210" y="415" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
