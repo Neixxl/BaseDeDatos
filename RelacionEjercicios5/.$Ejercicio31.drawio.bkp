@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="UjL0n7FHhitoC5Em1yGD">
+    <mxGraphModel dx="788" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cBP99T0YkXrcpd5Ya5I3-1" value="&lt;div&gt;Ejercicio 31: Rutas de transporte&lt;/div&gt;&lt;div&gt;Una empresa de transporte desea crear una base de datos para almacenar información sobre sus rutas.&lt;/div&gt;&lt;div&gt;La empresa dispone de una flota de autobuses que distribuye en una serie de rutas. En cada ruta, el autobús&lt;/div&gt;&lt;div&gt;pasa por un conjunto de ciudades en las que tiene parada.&lt;/div&gt;&lt;div&gt;Una ruta se identifica por un código y se caracteriza por los kilómetros totales de recorrido, el origen y el&lt;/div&gt;&lt;div&gt;destino final. De cada autobús, se almacena su matrícula, el modelo, su capacidad (plazas) y el nombre del&lt;/div&gt;&lt;div&gt;conductor. Se asume que un autobús sólo puede estar realizando una ruta al mismo tiempo, pero un autobús&lt;/div&gt;&lt;div&gt;puede realizar muchas rutas a lo largo del tiempo.&lt;/div&gt;&lt;div&gt;Las rutas tienen paradas en distintas ciudades. La parada siempre será en la misma ciudad. De cada ciudad,&lt;/div&gt;&lt;div&gt;almacenaremos un código distintivo, su nombre, población y el teléfono del lugar de parada. Para organizar&lt;/div&gt;&lt;div&gt;las rutas, cada parada tiene un número de orden, que puede variar entre distintas rutas debido a que una misma&lt;/div&gt;&lt;div&gt;ciudad puede pertenecer a varias rutas.&lt;/div&gt;&lt;div&gt;Podría suceder que haya autobuses que no hayan recorrido todavía ninguna ruta y rutas que no hayan sido&lt;/div&gt;&lt;div&gt;recorridas por el momento.&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="178" width="620" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
