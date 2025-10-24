@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="eMY3JFSTNKI_8quiHVAR">
+    <mxGraphModel dx="652" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-Uw2c5I53KvrM1k6raG5-1" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Ejercicio 36: Red social&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;En redes sociales como Facebook los perfiles de usuario son una herramienta fundamental. Crea una base de&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;datos sencilla que permita almacenarlos.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Los usuarios tienen un nombre real, su Nick (que es único), una clave de acceso y una cuenta de correo&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;electrónico. Los usuarios pueden escribir comentarios, los cuales están formados por un texto y la fecha de&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;creación, además de un id único que le asigna el sistema automáticamente. Además, los usuarios pueden&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;aparecer en fotografías. Una fotografía tiene un nombre de archivo y una descripción opcional, además, al&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;igual que ocurre con los comentarios el sistema le asignará a cada imagen un identificador único en el sistema.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Un usuario podrá aparecer en varias fotografías, pudiendo aparecer varios usuarios en cada de ellas&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="630" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="RZ7EFmUV7fL9KG5f3UMx">
+    <mxGraphModel dx="788" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-OEHWUJd3B2xy4A2kZtr-1" value="&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Ejercicio 34: Floristería&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Una pequeña floristería desea ampliar su negocio y realizar ventas a través de Internet, necesitando para ello&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;crear una base de datos.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;La floristería nos indica que los clientes pueden realizar pedidos y que cada pedido incluye un número de&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;pedido por el cual se identifica, la fecha de venta y el importe total del mismo. En cada pedido habrá una lista&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;con las flores solicitadas y qué cantidad se compró de cada una. Las flores se identifican mediante su nombre&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;científico único, su nombre común y el precio de venta. Las flores pertenecen a una especie determinada. Para&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;cada especie, se almacena el nombre identificativo, la época de floración, la estación de plantación, el tipo de&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;suelo apropiado y el tiempo de exposición recomendado. La floristería nos indica que una flor solo pertenece&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;a una única especie, pero que una especie puede tener muchas flores.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="50" width="570" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
