@@ -1,168 +1,168 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram name="Página-1" id="LPz2PASgApaIa1ri5SR1">
-    <mxGraphModel dx="814" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-1" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Ejercicio 33: Historial del navegador&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Necesitamos una base de datos para almacenar los enlaces de las páginas web que se visitan en un navegador&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;para mantener un histórico más completo que el servicio que proporcionan los Favoritos.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;De cada página que se visita, interesa conocer su URL, que será única, su nombre, una descripción breve y&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;una valoración global.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;Las páginas se van a agrupar por categorías en lugar de por carpetas, de manera que a cada página se le pueden&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;asignar varias categorías. De cada categoría, además de su nombre, queremos saber cuántas páginas web&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;pertenecen a ella y en qué fecha se asignó esa categoría a la página.&lt;/font&gt; &lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Las categorías se identifican por un código&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;interno. Cada página web podrá tener muchas categorías, pudiendo estas estar enlazadas a varias páginas web.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Se puede dar el caso raro de una página web que no tenga ninguna categoría asignada por el momento.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Para conocer el histórico de navegación, cada vez que visitemos una página web, se añadirá automáticamente&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;a la base de datos una entrada con la fecha de consulta y el tiempo de permanencia en el sitio. Las visitas&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;tienen asociadas un número de orden único. En una entrada del historial solo podrá haber una única web,&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;pudiendo una web estar en varias entradas del historial&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-1" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Ejercicio 33: Historial del navegador&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Necesitamos una base de datos para almacenar los enlaces de las páginas web que se visitan en un navegador&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;para mantener un histórico más completo que el servicio que proporcionan los Favoritos.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;De cada página que se visita, interesa conocer su URL, que será única, su nombre, una descripción breve y&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;una valoración global.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;Las páginas se van a agrupar por categorías en lugar de por carpetas, de manera que a cada página se le pueden&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;asignar varias categorías. De cada categoría, además de su nombre, queremos saber cuántas páginas web&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;pertenecen a ella y en qué fecha se asignó esa categoría a la página.&lt;/font&gt; &lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Las categorías se identifican por un código&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;interno. Cada página web podrá tener muchas categorías, pudiendo estas estar enlazadas a varias páginas web.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 204, 0);&quot;&gt;Se puede dar el caso raro de una página web que no tenga ninguna categoría asignada por el momento.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Para conocer el histórico de navegación, cada vez que visitemos una página web, se añadirá automáticamente&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;a la base de datos una entrada con la fecha de consulta y el tiempo de permanencia en el sitio. Las visitas&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;tienen asociadas un número de orden único. En una entrada del historial solo podrá haber una única web,&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;pudiendo una web estar en varias entradas del historial&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="70" y="550" width="710" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-2" value="paginaWeb" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-2" value="paginaWeb" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="360" y="900" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-3" value="categoria" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-3" value="categoria" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="620" y="900" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-4" value="entradaHistorial" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;shape=label;margin=3;double=1;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-4" value="entradaHistorial" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;shape=label;margin=3;double=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="900" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-5" value="asigna" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-5" value="asigna" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
           <mxGeometry x="480" y="900" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-6" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="ZOXs1Kg9fW8d7o00mSxK-5" parent="1" target="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-6" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-5" target="ZOXs1Kg9fW8d7o00mSxK-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="497" y="890" as="sourcePoint" />
             <mxPoint x="450" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-7" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="ZOXs1Kg9fW8d7o00mSxK-6">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-7" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="ZOXs1Kg9fW8d7o00mSxK-6" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint x="34" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="ZOXs1Kg9fW8d7o00mSxK-5" parent="1" target="ZOXs1Kg9fW8d7o00mSxK-3">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-5" target="ZOXs1Kg9fW8d7o00mSxK-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="497" y="890" as="sourcePoint" />
             <mxPoint x="620" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-9" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="ZOXs1Kg9fW8d7o00mSxK-8">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-9" value="(0,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="ZOXs1Kg9fW8d7o00mSxK-8" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-11" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2" target="ZOXs1Kg9fW8d7o00mSxK-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="356" y="855" as="sourcePoint" />
             <mxPoint x="416" y="855" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-11" value="&lt;u&gt;URL&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-11" value="&lt;u&gt;URL&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="375" y="850" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-13" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2" target="ZOXs1Kg9fW8d7o00mSxK-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="450" y="865" as="sourcePoint" />
             <mxPoint x="510" y="865" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-13" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-13" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="430" y="850" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-15" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2" target="ZOXs1Kg9fW8d7o00mSxK-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="276" y="865" as="sourcePoint" />
             <mxPoint x="336" y="865" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-15" value="descrip" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-15" value="descrip" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="311" y="850" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-18" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-19" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-18" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-2" target="ZOXs1Kg9fW8d7o00mSxK-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="341" y="985" as="sourcePoint" />
             <mxPoint x="401" y="985" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-19" value="valoracion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-19" value="valoracion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="368" y="960" width="64" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-20" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-21" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-20" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3" target="ZOXs1Kg9fW8d7o00mSxK-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="855" as="sourcePoint" />
             <mxPoint x="660" y="855" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-21" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-21" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="630" y="850" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-22" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-23" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-22" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3" target="ZOXs1Kg9fW8d7o00mSxK-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="700" y="920" as="sourcePoint" />
             <mxPoint x="760" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-23" value="nWebs" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-23" value="nWebs" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="680" y="855" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-24" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-25" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-5">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-24" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-5" target="ZOXs1Kg9fW8d7o00mSxK-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="855" as="sourcePoint" />
             <mxPoint x="540" y="855" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-25" value="fechaAsignacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-25" value="fechaAsignacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="477.5" y="820" width="95" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-26" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-27" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-26" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-3" target="ZOXs1Kg9fW8d7o00mSxK-27" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="536" y="870" as="sourcePoint" />
             <mxPoint x="596" y="870" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-27" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-27" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="571" y="855" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-28" value="contiene" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-28" value="contiene" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
           <mxGeometry x="230" y="900" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-29" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="ZOXs1Kg9fW8d7o00mSxK-28" parent="1" target="ZOXs1Kg9fW8d7o00mSxK-4">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-29" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-28" target="ZOXs1Kg9fW8d7o00mSxK-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="167" y="890" as="sourcePoint" />
             <mxPoint x="180" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-30" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="ZOXs1Kg9fW8d7o00mSxK-29">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-30" value="(0,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="ZOXs1Kg9fW8d7o00mSxK-29" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint x="34" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-31" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="ZOXs1Kg9fW8d7o00mSxK-28" parent="1" target="ZOXs1Kg9fW8d7o00mSxK-2">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-31" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-28" target="ZOXs1Kg9fW8d7o00mSxK-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="167" y="890" as="sourcePoint" />
             <mxPoint x="340" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-32" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="ZOXs1Kg9fW8d7o00mSxK-31">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-32" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="ZOXs1Kg9fW8d7o00mSxK-31" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-33" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-34" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-33" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4" target="ZOXs1Kg9fW8d7o00mSxK-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="190" y="855" as="sourcePoint" />
             <mxPoint x="250" y="855" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-34" value="fechaCon" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-34" value="fechaCon" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="170" y="850" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-35" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-36" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-35" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4" target="ZOXs1Kg9fW8d7o00mSxK-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="220" y="835" as="sourcePoint" />
             <mxPoint x="280" y="835" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-36" value="tiempoPer" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-36" value="tiempoPer" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="50" y="850" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-37" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" target="ZOXs1Kg9fW8d7o00mSxK-38" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-37" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZOXs1Kg9fW8d7o00mSxK-4" target="ZOXs1Kg9fW8d7o00mSxK-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="840" as="sourcePoint" />
             <mxPoint x="140" y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-38" value="&lt;u&gt;nOrden&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="ZOXs1Kg9fW8d7o00mSxK-38" value="&lt;u&gt;nOrden&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="115" y="855" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
