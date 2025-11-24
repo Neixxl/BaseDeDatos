@@ -1,6 +1,14 @@
-CREATE DATABASE Pubs
+CREATE DATABASE Pubs;
 USE Pubs;
 
+
+--TABLA LOCALIDAD--
+CREATE TABLE LOCALIDAD(
+codigoLocalidad INT NOT NULL, --PRIMARY
+nombre NVARCHAR(100) NOT NULL,
+
+CONSTRAINT pk_LOCALIDAD_codigoLocalidad PRIMARY KEY (codigoLocalidad)
+);
 
 --TABLA PUB--
 CREATE TABLE PUB(
@@ -53,15 +61,6 @@ CONSTRAINT fk_ARTICULO_codigoPUB FOREIGN KEY (codigoPUB) REFERENCES PUB(codigo)
 );
 
 
---TABLA LOCALIDAD--
-CREATE TABLE LOCALIDAD(
-codigoLocalidad INT NOT NULL, --PRIMARY
-nombre NVARCHAR(100) NOT NULL,
-
-CONSTRAINT pk_LOCALIDAD_codigoLocalidad PRIMARY KEY (codigoLocalidad)
-);
-
-
 --TABLA PUBEMPLEADO--
 CREATE TABLE PUB_EMPLEADO(
 codigoPUB INT NOT NULL,
@@ -71,3 +70,63 @@ funcion NVARCHAR(100) NOT NULL,
 CONSTRAINT pk_PUB_EMPLEADO PRIMARY KEY (codigoPUB, DNIEmpleado, funcion),
 CONSTRAINT ch_PUB_EMPLEADO_funcion CHECK (funcion IN ('CAMARERO' , 'SEGURIDAD' , 'LIMPIEZA'))
 );
+
+--GESTION DE USUARIOS
+
+--APARTADO1
+CREATE LOGIN administradorPubsLogin
+WITH PASSWORD = 'Contrasupersegura123';
+
+CREATE USER administradorPubs
+FOR LOGIN administradorPubsLogin;
+
+--APARTADO2
+CREATE USER lectorDatos WITHOUT LOGIN;
+
+--APARTADO3
+GRANT SELECT ON LOCALIDAD TO lectorDatos;
+GRANT SELECT ON PUB TO lectorDatos;
+GRANT SELECT ON ARTICULO TO lectorDatos;
+
+--APARTADO4
+CREATE LOGIN gestorArticulosLogin
+WITH PASSWORD = 'cOntradificil3';
+
+CREATE USER gestorArticulos
+FOR LOGIN gestorArticulosLogin;
+
+GRANT SELECT, UPDATE, INSERT ON ARTICULO TO gestorArticulos;
+DENY DELETE ON ARTICULO TO gestorArticulos;
+
+--APARTADO5
+CREATE LOGIN gestorEmpleadosLogin
+WITH PASSWORD = 'nOsemeocurrenmascontrasseguras2';
+
+CREATE USER gestorEmpleados
+FOR LOGIN gestorEmpleadosLogin;
+
+GRANT SELECT,INSERT,UPDATE,DELETE ON EMPLEADO TO gestorEmpleados;
+GRANT SELECT,INSERT,UPDATE,DELETE ON PUB_EMPLEADO TO gestorEmpleados;
+DENY SELECT ON ARTICULO TO gestorEmpleados;
+
+--APARTADO6
+GRANT INSERT,UPDATE,DELETE ON PUB TO administradorPubs WITH GRANT OPTION;
+
+--APARTADO7
+DENY UPDATE ON ARTICULO TO gestorArticulos;
+
+--APARTADO8
+DENY ALL ON TITULAR TO lectorDatos;
+
+--APARTADO9
+CREATE LOGIN encargadoPersonalLogin
+WITH PASSWORD = 'otraConstramas3';
+
+ALTER USER gestorEmpleados WITH NAME = encargadoPersonal;
+ALTER USER gestorEmpleados WITH LOGIN = encargadoPersonalLogin;
+
+--APARTADO10
+GRANT ALL ON TITULAR TO administradorPubs;
+
+--APARTADO11
+DROP USER lectorDatos;

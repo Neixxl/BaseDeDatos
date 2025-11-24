@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="LjWAWvCwzlvr69g-Ws5O">
+    <mxGraphModel dx="788" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WHs6vChPuCNHepzv5Fee-1" value="La ONG &quot;Los Reyes Magos son los padres&quot; desea diseñar una base de datos que le permita gestionar la&#xa;organización de las actividades navideñas destinadas a que todos los niños desfavorecidos de España reciban&#xa;sus regalos la noche de Reyes. Con el fin de llevar a cabo esta misión, la ONG contacta con vecinos de distintos&#xa;barrios para que se disfracen de Reyes Magos y participen en grupos vecinales lúdicos. Estos grupos son los&#xa;encargados de organizar eventos donde los niños pueden asistir, conocer a los Reyes Magos y realizar su&#xa;petición de regalo, que posteriormente se entregará el día 6 de enero. La ONG se encargará de comprar los&#xa;regalos utilizando el dinero donado por diversas organizaciones benéficas, que colaboran con la causa. De&#xa;cada vecino participante se almacenará su DNI, nombre y apellidos, así como el Rey Mago que encarna&#xa;(Melchor, Gaspar o Baltasar). Además, se desea saber qué otros vecinos han convencido para unirse a la causa.&#xa;De los niños se registrará su nombre, dirección y el regalo que le quieren pedir a los Reyes Magos. Dado que&#xa;los niños no poseen DNI, la ONG les asignará un número identificativo único. Cada niño realiza una única&#xa;petición, asociada a un único Rey Mago. Los grupos vecinales estarán identificados por el barrio al que&#xa;pertenecen, el número de integrantes y los eventos que han organizado. De cada evento se almacenará un&#xa;código identificativo, la ubicación física, la fecha y la hora de realización. Un evento puede ser organizado&#xa;por varios grupos vecinales de forma conjunta. Por otro lado, los niños pueden asistir a uno o varios eventos&#xa;para ver a los Reyes Magos, y en cada evento podrán ser atendidos por un vecino concreto que encarne a uno&#xa;de ellos." style="text;whiteSpace=wrap;align=left;" vertex="1" parent="1">
+          <mxGeometry x="70" width="610" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

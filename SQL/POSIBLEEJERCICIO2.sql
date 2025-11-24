@@ -1,4 +1,3 @@
-
 CREATE DATABASE GestionEntradas;
 USE GestionEntradas;
 
@@ -86,3 +85,75 @@ CONSTRAINT FK_Entrada_codRepresentacion FOREIGN KEY (codRepresentacion) REFERENC
 CONSTRAINT FK_Entrada_codRecinto FOREIGN KEY (codRecinto) REFERENCES Recinto(codRecinto),
 CONSTRAINT FK_Entrada_dniEspectador FOREIGN KEY (dniEspectador) REFERENCES Espectador(dniEspectador)
 );
+
+--GESTION DE USUARIOS
+
+--APARTADO1
+CREATE LOGIN adminEntradasLogin
+WITH PASSWORD = 'qUEcontraMasDificil13';
+
+CREATE USER adminEntradas
+FOR LOGIN adminEntradasLogin;
+
+--APARTADO2
+CREATE USER consultaPublica WITHOUT LOGIN;
+
+--APARTADO3	
+GRANT SELECT ON Recinto TO consultaPublica;
+GRANT SELECT ON Espectaculo TO consultaPublica;
+GRANT SELECT ON Representacion TO consultaPublica;
+
+--APARTADO4
+CREATE LOGIN gestorEspectaculosLogin
+WITH PASSWORD = 'cONTRAsuuPERdIFICIL32';
+
+CREATE USER gestorEspectaculos
+FOR LOGIN gestorEspectaculosLogin;
+
+GRANT SELECT, INSERT, UPDATE ON Espectaculo TO gestorEspectaculos;
+DENY DELETE ON Espectaculo TO gestorEspectaculos;
+
+--APARTADO5
+CREATE LOGIN gestorRecintosLogin
+WITH PASSWORD = 'GESTORrecintosCONTRA001';
+
+CREATE USER gestorRecintos
+FOR LOGIN gestorRecintosLogin;
+
+GRANT SELECT, INSERT, UPDATE ON Recinto TO gestorRecintos;
+DENY ALL ON Espectador TO gestorRecintos;
+
+--APARTADO6
+CREATE LOGIN usuarioEspectadorLogin
+WITH PASSWORD = 'coNtraMala31111';
+
+CREATE USER usuarioEspectador
+FOR LOGIN usuarioEspectadorLogin;
+
+GRANT SELECT ON Espectaculo TO usuarioEspectador;
+GRANT SELECT ON Representacion TO usuarioEspectador;
+GRANT SELECT ON Precio_Representacion TO usuarioEspectador;
+
+DENY UPDATE ON Espectaculo TO usuarioEspectador;
+DENY UPDATE ON Representacion TO usuarioEspectador;
+DENY UPDATE ON Precio_Representacion TO usuarioEspectador;
+
+--APARTADO7
+GRANT INSERT,UPDATE,DELETE,SELECT ON Entrada TO adminEntradas WITH GRANT OPTION;
+
+--APARTADO8
+DENY UPDATE ON Espectaculo TO gestorEspectaculos;
+
+--APARTADO9
+DENY ALL ON Espectador TO consultaPublica;
+
+--APARTADO10
+ALTER USER gestorRecintos WITH NAME = coordinadorRecintos;
+ALTER LOGIN gestorRecintosLogin WITH NAME = coordinadorRecintosLogin;
+ALTER USER coordinadorRecintos WITH LOGIN = coordinadorRecintosLogin;
+
+--APARTADO11
+GRANT ALL ON Representacion TO adminEntradas;
+
+--APARTADO12
+DROP USER consultaPublica;
