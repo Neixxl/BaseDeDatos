@@ -1,0 +1,146 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="LEeeVc-vxwnbCmrG9g9-">
+    <mxGraphModel dx="788" dy="1720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-2" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Una entidad bancaria desea diseñar una base de datos que permita gestionar de forma eficiente la información&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;relacionada con sus clientes, las cuentas que poseen, las sucursales del banco y las transacciones que se&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;realizan.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;De cada cliente se desea conservar su DNI, nombre, apellidos, dirección, localidad, fecha de nacimiento y&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;sexo, con el fin de disponer de un registro completo de sus datos personales y de contacto.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Un mismo cliente&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;puede ser titular de varias cuentas dentro de la entidad, ya sea de manera individual o compartida con otros&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;clientes.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Cada cuenta estará identificada por un número único y contendrá información como su tipo (corriente, de&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;ahorro, etc.), el saldo actual, la fecha de apertura y, en su caso, el límite de descubierto autorizado.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;Una misma&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;cuenta puede pertenecer a varios clientes, mientras que cada una de ellas estará asociada exclusivamente a una&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(102, 255, 102);&quot;&gt;única sucursal.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;El banco permite realizar transacciones entre las cuentas de los clientes, de las cuales debemos guardar un&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;código de transacción y el tipo de transacción (de depósito o de retiro).&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;Se podrán realizar movimientos entre dos cuentas que deberán quedar registrados con un código de transacción&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;seguro (que no se podrá repetir para garantizar la seguridad de la operación), indicando además el tipo de&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;transacción realizada, la fecha en que se llevó a cabo, la cantidad y moneda implicada y las cuentas de origen&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;y de destino.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;El banco nos pide que debemos llevar un registro de todos y cada uno de los movimientos entre&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;cuentas realizados.&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;De esta manera, la base de datos permitirá reflejar las relaciones existentes entre clientes, cuentas, sucursales&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;y transacciones, así como obtener información detallada sobre la actividad bancaria.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="-30" width="700" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-3" value="cliente" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="220" y="520.5" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-4" value="#DNI&lt;div&gt;nombre&lt;/div&gt;&lt;div&gt;apellidos&lt;/div&gt;&lt;div&gt;localidad&lt;/div&gt;&lt;div&gt;fechaNac&lt;/div&gt;&lt;div&gt;sexo&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="150" y="487.5" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-5" value="cuenta" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="480" y="520.5" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-6" value="pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="340" y="520.5" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-7" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="S35TMZYEsxKX-QaJZLR4-6" target="S35TMZYEsxKX-QaJZLR4-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367" y="510.5" as="sourcePoint" />
+            <mxPoint x="320" y="540.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-8" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="S35TMZYEsxKX-QaJZLR4-7" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-9" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="S35TMZYEsxKX-QaJZLR4-6" target="S35TMZYEsxKX-QaJZLR4-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367" y="510.5" as="sourcePoint" />
+            <mxPoint x="540" y="540.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-10" value="(1,M)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="S35TMZYEsxKX-QaJZLR4-9" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="S35TMZYEsxKX-QaJZLR4-6" target="S35TMZYEsxKX-QaJZLR4-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-12" value="#id&lt;br&gt;tipo&lt;div&gt;saldo&lt;/div&gt;&lt;div&gt;fechaAper&lt;/div&gt;&lt;div&gt;limite&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="547.5" y="490" width="60" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-13" value="pertenece" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="472.5" y="615.5" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="S35TMZYEsxKX-QaJZLR4-13" target="S35TMZYEsxKX-QaJZLR4-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="447" y="620.5" as="sourcePoint" />
+            <mxPoint x="400" y="650.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-15" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="S35TMZYEsxKX-QaJZLR4-14" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="30" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S35TMZYEsxKX-QaJZLR4-13" target="S35TMZYEsxKX-QaJZLR4-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="447" y="620.5" as="sourcePoint" />
+            <mxPoint x="510" y="710.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-17" value="(1,1)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="S35TMZYEsxKX-QaJZLR4-16" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="30" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S35TMZYEsxKX-QaJZLR4-18" value="sucursal" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="470" y="710.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-1" value="realiza" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="477.5" y="410" width="65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-2" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="G2Glh4EJuXD5-Tn9Ge5Q-1" parent="1" target="S35TMZYEsxKX-QaJZLR4-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="447" y="390" as="sourcePoint" />
+            <mxPoint x="400" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-3" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="G2Glh4EJuXD5-Tn9Ge5Q-2">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-4" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="G2Glh4EJuXD5-Tn9Ge5Q-1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="447" y="390" as="sourcePoint" />
+            <mxPoint x="600" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-5" value="(1,M&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="G2Glh4EJuXD5-Tn9Ge5Q-4">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="G2Glh4EJuXD5-Tn9Ge5Q-44" parent="1" source="S35TMZYEsxKX-QaJZLR4-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="805" as="sourcePoint" />
+            <mxPoint x="510" y="805" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-44" value="&lt;u&gt;codigo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="485" y="790" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-46" value="movimiento" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-47" value="transaccion" style="whiteSpace=wrap;html=1;align=center;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="920" y="420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-53" value="relacion" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="770" y="380" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-54" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="G2Glh4EJuXD5-Tn9Ge5Q-53" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="747" y="370" as="sourcePoint" />
+            <mxPoint x="700" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-55" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="G2Glh4EJuXD5-Tn9Ge5Q-54">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-56" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="G2Glh4EJuXD5-Tn9Ge5Q-53" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="747" y="370" as="sourcePoint" />
+            <mxPoint x="920" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2Glh4EJuXD5-Tn9Ge5Q-57" value="(1,N)" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="G2Glh4EJuXD5-Tn9Ge5Q-56">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
