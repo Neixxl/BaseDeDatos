@@ -24,7 +24,9 @@ WHERE nombre LIKE 'J%'  AND procedencia != 'EE.UU';
 -- EJERCICIO 05 -- 
 SELECT codigo, equipo_local, equipo_visitante, puntos_local, puntos_visitante, temporada
 FROM partido
-WHERE temporada = '2024-25' AND (puntos_local > 120 OR equipo_visitante < 90);
+WHERE temporada = '2024-25' AND (puntos_local > 120 OR puntos_visitante < 90);
 
-
+SELECT *
+FROM jugador
+WHERE procedencia = 'España';
 
