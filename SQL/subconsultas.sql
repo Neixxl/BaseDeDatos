@@ -26,3 +26,4 @@ WHERE precio = (
 		WHERE fabricante.nombre = 'Samsung'
 		)
 	);
+
