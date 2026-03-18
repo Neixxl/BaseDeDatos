@@ -100,10 +100,57 @@ WHERE altura > (
 --Ejercicio 07: Muestra un listado con los equipos cuyo nombre empieza con la letra 'C' y que tienen al menos
 --un jugador con un peso superior a 100 kg en la temporada 2024-25. Total de filas recuperadas: 3.
 
+SELECT *
+FROM equipo
+WHERE equipo.nombre LIKE 'C%' AND codigo IN (
+	SELECT codigo_equipo
+	FROM jugador_equipo
+	WHERE temporada = '2024-25' AND codigo_jugador IN (
+		SELECT codigo
+		FROM jugador
+		WHERE peso < 100
+		)
+	)
+;
+
+
+--Ejercicio 08: Muestra un listado con los jugadores que han tenido una media de puntos por temporada mayor
+--que el promedio de puntos por temporada de todos los jugadores en la temporada 2017-18. Total de filas
+--recuperadas: 207.
+
+
+SELECT 
+    jugador.nombre, 
+    estadistica_jugador_temporada.promedio_puntos_partido_temporada
+FROM jugador
+-- Unimos la tabla de jugadores con sus estadísticas
+JOIN estadistica_jugador_temporada ON jugador.codigo = estadistica_jugador_temporada.id_jugador
+WHERE estadistica_jugador_temporada.temporada = '2017-18'
+AND estadistica_jugador_temporada.promedio_puntos_partido_temporada > (
+	-- SUBCONSULTA: Calculamos el "listón" (la media de todos)
+	SELECT AVG(promedio_puntos_partido_temporada)
+	FROM estadistica_jugador_temporada
+	WHERE temporada = '2017-18'
+	);
 
 
 
 
+
+SELECT *
+FROM jugador
+WHERE altura > (
+	SELECT AVG(altura)
+	FROM jugador
+	)
+;
+
+
+SELECT jugador.nombre, (
+	SELECT MAX(promedio_puntos_partido_temporada)
+	FROM estadistica_jugador_temporada
+	WHERE id_jugador = jugador.codigo) AS record_personal
+FROM jugador;
 
 
 
@@ -132,3 +179,156 @@ WHERE codigo IN (
             )
 		)
 	);
+
+
+
+SELECT *
+FROM equipo
+WHERE anio_fundacion = (
+	SELECT anio_fundacion
+	FROM equipo
+	WHERE codigo = '1610612739'
+	)
+;
+
+
+
+SELECT anio_fundacion AS año, codigo, nombre
+FROM equipo
+WHERE codigo = '1610612739';
+
+
+
+--Ejercicio 15: Muestra un listado con los jugadores que tienen un promedio de puntos por encima del promedio
+--de su equipo en la misma temporada. Muestra el resultado ordenado por nombre de jugador y por nombre de
+--equipo. Total de filas recuperadas: 2.924
+
+
+SELECT 
+    j.nombre AS nombre_jugador, 
+    eq.nombre AS nombre_equipo
+FROM jugador j
+-- Pegamos las estadísticas (LA LLAMAMOS e1)
+JOIN estadistica_jugador_temporada e1 ON j.codigo = e1.id_jugador
+-- Pegamos el equipo para poder mostrar su nombre
+JOIN equipo eq ON e1.id_equipo = eq.codigo
+
+WHERE e1.promedio_puntos_partido_temporada > (
+
+    -- SUBCONSULTA: Calculamos la media del equipo de ese jugador
+    -- A esta copia de la tabla la llamamos e2
+    SELECT AVG(e2.promedio_puntos_partido_temporada)
+    FROM estadistica_jugador_temporada e2
+    -- ¡LA MAGIA ESTÁ AQUÍ! Conectamos la tabla de dentro (e2) con la de fuera (e1)
+    WHERE e2.id_equipo = e1.id_equipo 
+      AND e2.temporada = e1.temporada
+)
+ORDER BY j.nombre, eq.nombre;
+
+
+SELECT jugador.nombre AS nombreJ, equipo.nombre AS nombreEq
+FROM jugador
+JOIN estadistica_jugador_temporada ON jugador.codigo = estadistica_jugador_temporada.id_jugador
+JOIN equipo ON estadistica_jugador_temporada.id_equipo = equipo.codigo
+WHERE estadistica_jugador_temporada.promedio_puntos_partido_temporada > (
+	SELECT AVG(sc.promedio_puntos_partido_temporada)
+	FROM estadistica_jugador_temporada sc
+	WHERE sc.id_equipo = estadistica_jugador_temporada.id_equipo
+	AND sc.temporada = estadistica_jugador_temporada.temporada
+)
+ORDER BY jugador.nombre, equipo.nombre;
+
+
+--Ejercicio 09: Muestra un listado con los jugadores que han tenido la mejor estadística de promedio de tiros
+--libres en cada temporada junto al nombre del equipo en el que jugaron. Total de filas recuperadas: 16.
+
+
+SELECT jugador.nombre, estadistica_jugador_temporada.promedio_tiros_libres_temporada AS promedioTiros, equipo.nombre AS equipo
+FROM jugador
+INNER JOIN estadistica_jugador_temporada ON estadistica_jugador_temporada.id_jugador = jugador.codigo
+INNER JOIN equipo ON equipo.codigo = estadistica_jugador_temporada.id_equipo
+WHERE estadistica_jugador_temporada.promedio_tiros_libres_temporada = (
+	SELECT MAX(cs.promedio_tiros_libres_temporada)
+	FROM estadistica_jugador_temporada cs
+	WHERE cs.temporada = estadistica_jugador_temporada.temporada
+	)
+;
+
+
+--Ejercicio 10: Muestra un listado con los nombres de los jugadores y su equipo que han jugado más de 36
+--partidos en la temporada 2019-20. Total de filas recuperadas: 5.
+
+SELECT jugador.nombre AS nomJugador, equipo.nombre AS nomEquipo
+FROM jugador
+INNER JOIN jugador_equipo ON jugador_equipo.codigo_jugador = jugador.codigo
+INNER JOIN equipo ON equipo.codigo = jugador_equipo.codigo_equipo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT 
+    jugador.nombre AS nombreJ, 
+    equipo.nombre AS nombreEq
+FROM jugador
+-- Unimos todo para tener los nombres
+JOIN estadistica_jugador_temporada ON jugador.codigo = estadistica_jugador_temporada.id_jugador
+JOIN equipo ON estadistica_jugador_temporada.id_equipo = equipo.codigo
+
+-- Filtramos: ¿El promedio del jugador es IGUAL AL MÁXIMO de su temporada?
+WHERE estadistica_jugador_temporada.promedio_tiros_libres_temporada = (
+    
+    -- SUBCONSULTA: Busca el récord absoluto (MAX) de esa temporada concreta
+    SELECT MAX(sc.promedio_tiros_libres_temporada)
+    FROM estadistica_jugador_temporada sc
+    -- Conectamos la temporada de la subconsulta con la de fuera
+    WHERE sc.temporada = estadistica_jugador_temporada.temporada
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT 
+    j.nombre AS jugador, 
+    eq.nombre AS equipo,
+    e1.temporada,
+    e1.promedio_tiros_libres_temporada
+FROM jugador j
+JOIN estadistica_jugador_temporada e1 ON j.codigo = e1.id_jugador
+JOIN equipo eq ON e1.id_equipo = eq.codigo
+
+WHERE e1.promedio_tiros_libres_temporada = (
+
+    -- SUBCONSULTA: Buscamos la nota más alta de esa temporada específica
+    SELECT MAX(e2.promedio_tiros_libres_temporada)
+    FROM estadistica_jugador_temporada e2
+    -- Conectamos la temporada de dentro con la de fuera
+    WHERE e2.temporada = e1.temporada
+);
